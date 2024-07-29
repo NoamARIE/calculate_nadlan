@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מחשבון רווח נטו מעסקת נדל"ן</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>מחשבון רווח נטו מעסקת נדל"ן</h1>
+        <div id="calculator">
+            <div class="form-row">
+                <label for="purchase-price">מחיר רכישה</label>
+                <input type="text" id="purchase-price" class="calculator-input" />
+            </div>
+            <div class="form-row">
+                <label for="appraisal-value">הערכת שמאי</label>
+                <input type="text" id="appraisal-value" class="calculator-input" />
+            </div>
+            <div class="form-row">
+                <label for="financing-percentage">אחוז מימון % מהערכת שמאי</label>
+                <input type="text" id="financing-percentage" class="calculator-input" value="75%" />
+            </div>
+            <div class="form-row">
+                <label for="mortgage-interest">ריבית המשכנתא</label>
+                <input type="text" id="mortgage-interest" class="calculator-input" />
+            </div>
+            <div class="form-row">
+                <label for="mortgage-years">שנות המשכנתא</label>
+                <input type="text" id="mortgage-years" class="calculator-input" value="30" />
+            </div>
+            <div class="form-row">
+                <label for="sale-price">שווי מכירה</label>
+                <input type="text" id="sale-price" class="calculator-input" />
+            </div>
+            <div class="form-row">
+                <label for="holding-months">חודשי אחזקת הדירה</label>
+                <input type="text" id="holding-months" class="calculator-input" />
+            </div>
+            <div class="form-row">
+                <label for="brokerage-fee">תיווך דירה</label>
+                <input type="text" id="brokerage-fee" class="calculator-input" />
+            </div>
+            <div class="form-row">
+                <label for="rental-brokerage-fee">תיווך שכירות</label>
+                <input type="text" id="rental-brokerage-fee" class="calculator-input" value="0" />
+            </div>
+            <div class="form-row">
+                <label for="renovation-cost">שיפוץ/עיצוב הדירה</label>
+                <input type="text" id="renovation-cost" class="calculator-input" value="0" />
+            </div>
+            <div class="form-row">
+                <label for="private-appraisal">שמאות פרטית/מקצועית</label>
+                <input type="text" id="private-appraisal" class="calculator-input" value="600" />
+            </div>
+            <div class="form-row">
+                <label for="home-inspection">בדק בית</label>
+                <input type="text" id="home-inspection" class="calculator-input" value="0" />
+            </div>
+            <div class="form-row">
+                <label for="legal-fees">עורך דין</label>
+                <input type="text" id="legal-fees" class="calculator-input" />
+            </div>
+            <div class="form-row">
+                <label for="licensing-costs">הוצאות רישוייות</label>
+                <input type="text" id="licensing-costs" class="calculator-input" />
+            </div>
+            <div class="form-row">
+                <label for="mortgage-advisor-fee">יועץ משכנתא</label>
+                <input type="text" id="mortgage-advisor-fee" class="calculator-input" value="0" />
+            </div>
+            <div class="form-row">
+                <label for="mortgage-file-opening-fee">פתיחת תיק משכנתא</label>
+                <input type="text" id="mortgage-file-opening-fee" class="calculator-input" value="300" />
+            </div>
+            <div class="form-row">
+                <label for="purchase-tax">מס רכישה</label>
+                <input type="text" id="purchase-tax" class="calculator-input" value="0" />
+            </div>
+            <div class="form-row">
+                <label for="capital-gains-tax-checkbox">חישוב מס שבח</label>
+                <input type="checkbox" id="capital-gains-tax-checkbox" />
+            </div>
+            <div class="form-row" id="capital-gains-tax-section" style="display: none;">
+                <label for="capital-gains-tax">מס שבח</label>
+                <input type="text" id="capital-gains-tax" class="calculator-input" disabled />
+            </div>
+            <div class="form-row">
+                <label for="net-profit">רווח נטו</label>
+                <input type="text" id="net-profit" class="calculator-input" disabled />
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
